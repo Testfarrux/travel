@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+div,
+ul,
+li,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* utils class start */
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.btn {
+  padding: 15px 30px;
+  background: #155a6b;
+  color: #fff;
+  border: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* utils class end */
+
+/* header start */
+
+.header {
+  background: url(../img/home1.jpg) no-repeat center / cover;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.header a {
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+  padding-top: 17px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  padding: 15px 35px;
+}
+
+.navbar a {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.showcase {
+  display: flex;
+}
+
+.showcase img {
+  width: 180px;
+}
+
+.showcase .card {
+  width: 370px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #155a6b;
+  padding: 20px 30px;
+}
+
+.showcase-card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  height: 70vh;
+}
+
+.showcase .card p {
+  padding-bottom: 15px;
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+.showcase .card a {
+  font-size: 14px;
+}
+
+.showcase-text h4 {
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+
+.showcase-text h1 {
+  font-size: 60px;
+  padding-bottom: 40px;
+  font-weight: 400;
+}
+
+.showcase-text h1 span {
+  font-weight: 600;
+}
+
+.showcase-text {
+  width: 100%;
+}
+.showcase-text ul {
+  display: flex;
+  padding-top: 70px;
+}
+
+.showcase-text li {
+  padding: 20px 40px 20px 0;
+}
+
+.showcase-text li a {
+  font-size: 18px;
+}
+
+/* header end */
+
+/* about start */
+
+#about {
+  background: #0b2b33;
+  color: #fff;
+}
+
+#about .container {
+  display: flex;
+  padding: 100px 0;
+  align-items: center;
+}
+
+.about-text h1 {
+  font-weight: 500;
+  font-size: 26px;
+  padding-bottom: 25px;
+}
+
+.about-img {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text p {
+  color: #ccc;
+  padding-bottom: 30px;
+}
+
+.about-img .img1 img {
+  width: 230px;
+}
+.about-img .img2 img {
+  width: 290px;
+  margin-left: 16px;
+}
+
+/* about end */
+
+/*  contact start */
+
+#contact {
+  background: #0b2b33;
+  color: #fff;
+  text-align: center;
+  padding: 60px 0;
+}
+
+#contact .container {
+  background: #0f3d49;
+  padding: 60px 0;
+}
+
+#contact h1 {
+  font-weight: 500;
+  font-size: 26px;
+  padding-bottom: 20px;
+}
+
+#contact p {
+  padding-bottom: 20px;
+}
+
+#contact input {
+  padding: 20px 150px 20px 10px;
+  background: #0b2b33;
+  border: 0;
+  outline: none;
+  color: #ccc;
+}
+
+#contact input::placeholder {
+  color: #ccc;
+}
+
+/*  contact end */
+
+@media screen and (max-width: 900px) {
+  .btn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+
+  .navbar,
+  .navbar ul,
+  .showcase,
+  .about .container,
+  .about-img {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .showcase h1 {
+    font-size: 32px;
+  }
+
+  .showcase h4 {
+    font-size: 14px;
+  }
+  .showcase ul {
+    justify-content: center;
+  }
+
+  .showcase li {
+    padding: 15px 10px;
+  }
+
+  .showcase-card {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    width: 228px !important;
+    padding: 24px 16px !important;
+    text-align: left;
+  }
+
+  .card img {
+    width: 100px !important;
+    max-width: 100%;
+  }
+
+  .card p,
+  .card a {
+    font-size: 13px !important;
+  }
+
+  .about-text {
+    padding-bottom: 30px;
+  }
+
+  .about-text h1 {
+    font-size: 20px;
+  }
+
+  .about-img img {
+    width: 100% !important;
+  }
+
+  .about-img .img2 img {
+    margin: 0;
+  }
+
+  .contact h1 {
+    font-size: 20px !important;
+  }
+  .contact p {
+    font-size: 15px !important;
+  }
+
+  .contact input {
+    width: 193px;
+    margin-bottom: 16px;
+  }
+
+  .contact .container {
+    width: 95% !important;
+  }
+}
