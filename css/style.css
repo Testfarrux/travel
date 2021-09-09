@@ -238,6 +238,8 @@ a {
     font-size: 14px;
   }
 
+  /* change flex direction */
+
   .navbar,
   .navbar ul,
   .showcase,
@@ -246,7 +248,7 @@ a {
     flex-direction: column;
     text-align: center;
   }
-
+  /* showcase */
   .showcase h1 {
     font-size: 32px;
   }
@@ -283,6 +285,8 @@ a {
     font-size: 13px !important;
   }
 
+  /* about */
+
   .about-text {
     padding-bottom: 30px;
   }
@@ -298,7 +302,7 @@ a {
   .about-img .img2 img {
     margin: 0;
   }
-
+  /* contact */
   .contact h1 {
     font-size: 20px !important;
   }
